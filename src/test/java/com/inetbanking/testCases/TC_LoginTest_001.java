@@ -11,8 +11,6 @@ public class TC_LoginTest_001 extends BaseClass {
 	@Test
 	public void loginTest() throws InterruptedException
 	{
-	
-
 		loginPage lp=new loginPage(driver);
 		lp.setUserName(userName);
 		lp.setPassword(password);

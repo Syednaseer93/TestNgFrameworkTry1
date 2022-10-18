@@ -23,14 +23,15 @@ public class BaseClass {
 	@BeforeClass
 	public void setup(String br)
 	{
-
-		logger=Logger.getLogger("ebanking");
+		logger=Logger.getLogger("BaseClass");
 		PropertyConfigurator.configure("Log4j.properties");
 		if(br.equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
-			driver=new ChromeDriver(); }
-		else if(br.equals("chrome")){
+			driver=new ChromeDriver();
+		}
+		else if(br.equals("firefox"))
+		{
 			System.setProperty("webdriver.gecko.driver",readconfig.getFirefoxpath());
 			driver=new FirefoxDriver(); 
 		}

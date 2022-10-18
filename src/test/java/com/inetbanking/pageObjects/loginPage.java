@@ -6,11 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class loginPage {
-	WebDriver ldriver;
-	public loginPage(WebDriver rdriver)
+	WebDriver driver;
+	public loginPage(WebDriver d)
 	{
-		ldriver=rdriver;
-		PageFactory.initElements(rdriver, this);
+		driver=d;
+	//	PageFactory.initElements(rdriver, this);
 	}
 	 @FindBy(name="uid")
 	 WebElement txtuserName;
